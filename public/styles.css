@@ -1,0 +1,565 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Raleway;
+    color: #333333;
+    
+}
+.wrapper {
+    text-align: center;
+    /* background-color: #fff;
+    position: relative;
+    z-index: 1000;
+    -webkit-transition: left .33s cubic-bezier(0.694,0.0482,0.335,1);
+    -moz-transition: left .33s cubic-bezier(0.694,0.0482,0.335,1);
+    -o-transition: left .33s cubic-bezier(0.694,0.0482,0.335,1);
+    -ms-transition: left .33s cubic-bezier(0.694,0.0482,0.335,1);
+    transition: left .33s cubic-bezier(0.694,0.0482,0.335,1);
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.wrapper_inner {
+  margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #06bec0;
+   
+}
+/* HEADER / NAV BAR STYLING */
+header {
+    top: 0!important;
+    margin-top: 0!important;
+    display: block;
+}
+
+/* Center the header_inner container */
+.header_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_inner h3{
+  color: #fff;
+}
+
+/* Add spacing between the logo and title */
+.header_logo,
+.header_title {
+  margin-right: 20px; /* Adjust as needed */
+}
+.header_title a {
+  text-decoration: none;
+}
+
+/* BUTTON CSS ==================================*/
+
+.calltoactionbtn {
+	box-shadow: 0px 1px 0px 0px #000000;
+	background:linear-gradient(to bottom, #06bdc0 5%, #06bdc0 100%);
+	background-color:#06bdc0;
+	border-radius:5px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #000000;
+}
+.calltoactionbtn:hover {
+	transform: translateY(-2px); /* Move the button up */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); 
+}
+.calltoactionbtn:active {
+	position:relative;
+	top:1px;
+}
+
+/* LANDING CONTENT ============================ */
+
+.content {
+    margin: 0;
+    position: relative;
+    z-index: 100;
+    background-color: #ffffff;
+}
+.context_inner{
+    margin: 0;
+}
+
+.q_slider {
+    background-image: url("./public/images/headinglayout.jpg");
+    background-size: cover; 
+    background-position: bottom center;
+    width: 100%;
+    height: 65vh;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    
+    
+}
+.navlogo{
+  max-height: 50px;
+  max-width: 50px;
+}
+.logo{
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.landing_text {
+  padding: 0;
+    text-align: center; /* Center text within .landing_text */
+    
+}
+.landingwords{
+  color: #333333;
+}
+
+
+  
+  /* Additional styles for your text elements */
+  .landing_text h3 {
+    font-size: 24px;
+    /* Add other styles as needed */
+  }
+  
+  .landing_text h1 {
+    font-size: 48px;
+    /* Add other styles as needed */
+  }
+  
+  .landing_text button {
+    /* Add styles for the button */
+  }
+
+  .second_landing{
+    background-color: #ffffff!important;
+  }
+  .second_inner{
+    padding: 2rem;
+    line-height: 1.5;
+    max-width: 50%;
+    margin: auto;
+    
+  }
+
+  .sellingpoints{
+    padding: 2.5rem;
+    line-height: 1.5;
+  }
+  .point{
+    padding-top: 18px;
+  }
+  .text-wrapper h3{
+    font-size: 3rem;
+    color: white;
+  }
+  .text-wrapper p{
+    font-size: 2rem;
+    color: white;
+    
+  }
+
+  .text-wrapper{
+  }
+
+  .callToAction{
+    background-color: #ffff;
+    border: 2px solid #ffff;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    min-width: 90%;
+    margin: auto;
+    min-height: 50vh;
+    border-radius: 25px;
+  }
+  
+  .inner_calltoaction {
+    background-image: url("/public/images/creek1.jpeg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%; /* Set a minimum height to ensure the background image is visible */
+    min-width: 90%;
+    border-radius: 20px;
+}
+
+
+
+  .outterCall{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    max-width: 95%;
+    margin: auto;
+    min-height: 55vh;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    background-color: #06bdc0;
+    
+  }
+
+
+/* SECTION 3 STYLING */
+/* Default styles for the section ========================================== */
+.section3 {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.inner_section3 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sellingpoints {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+  justify-content: space-between; /* Space evenly between columns */
+}
+
+.point {
+  flex: 1; /* Equal width for all columns */
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.point:hover{
+  transform: scale(1.1); /* Scale the element slightly on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hoverEffect:hover{
+  transform: scale(1.1); /* Scale the element slightly on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .sellingpoints {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .point {
+    flex: 0; /* Reset flex value for stacked columns */
+    margin: 10px 0; /* Add vertical spacing between stacked columns */
+  }
+}
+
+
+/* SECTION 4: SERVICES */
+/* Default styles for the section */
+.content4 {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.inner-content4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+  justify-content: center; /* Center columns horizontally */
+}
+
+.services {
+  flex: 0 0 calc(33.33% - 20px); /* Equal width for 3 columns with spacing between */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servicesLogo{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .services {
+    flex-basis: calc(100% - 20px); /* Full width for stacked columns on mobile */
+    margin: 10px 0; /* Add vertical spacing between stacked columns */
+  }
+}
+
+/* card flip styles =================================*/
+/* Flip card styles  =================================*/
+.flip-card {
+  perspective: 1000px;
+  
+  padding: 20px;
+  
+
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+/* Style for the front face (visible by default) */
+.flip-card-front {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Style for the back face (hidden by default) */
+.flip-card-back {
+  background-color: #f7f7f7;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the flip card title (you can adjust this as needed) */
+.flip-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the flip card content (you can adjust this as needed) */
+.flip-card p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.flip-card-front img {
+  margin-bottom: 10px; /* Adjust as needed to align the image */
+}
+
+.flip-card-front h4 {
+  margin: 0; /* Reset margin to control text alignment */
+}
+
+/* Adjust the vertical alignment of text within the back face */
+.flip-card-back p {
+  margin-top: 10px; /* Adjust as needed to align the text */
+}
+
+
+
+
+
+
+/* section 5  ================================= =================================*/
+.section5{
+  background-image: url("./public/images/headinglayout.jpg");
+  background-size: cover; 
+  background-position: bottom center;
+  width: 100%;
+  min-height: 25vh;
+ 
+  
+}
+/* #06BECo */
+.inner-section5{
+
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+.inner-section5 p{
+  
+  color: white;
+
+}
+.section5wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+
+.inner-section5 {
+  flex-basis: calc(25% - 20px); /* 4 columns on desktop */
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .inner-section5 {
+      flex-basis: calc(50% - 20px); /* 2 columns on mid-sized screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-section5 {
+      flex-basis: 100%; /* Stacked columns on mobile */
+  }
+}
+@media (max-width: 768px) {
+  .inner-section5 p {
+    color: black;
+  }
+}
+
+
+
+
+
+/* footer styles  ================================= ================================= */
+/* Default styles for the section */
+.footer {
+  background-color: #06bec0;
+  padding: 20px;
+}
+
+.inner-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footersection {
+  flex: 1; /* Equal width for three columns */
+  margin: 0 10px; /* Add horizontal spacing between columns */
+  text-align: center;
+}
+
+.footersection h3 {
+  color: #ffff!important;
+}
+
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .inner-footer {
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center; /* Center the content horizontally */
+  }
+
+  .footersection {
+    flex: 0; /* Reset flex value for stacked columns */
+    margin: 10px 0; /* Add vertical spacing between stacked columns */
+    text-align: center; /* Center the text content horizontally */
+  }
+
+  .socialmedia {
+    display: flex;
+    justify-content: center; /* Center the social media icons horizontally */
+    margin: 20px 0; /* Add spacing between icons and other content */
+  }
+
+  .socialmediaicon {
+    margin: 0 10px; /* Add spacing between social media icons */
+  }
+}
+
+.socialmedia img {
+  max-height: 48px;
+}
+
+.socialmediaicon:hover {
+  cursor: pointer;
+}
+
+
+
+/* POP UP STYLING ====================================================== */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-height: 50vh;
+  min-width: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  z-index: 999;
+  color: #333333;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+.popuptext {
+  color: black!important;
+}
+
+
+.inputclass {
+  max-width: 100%; /* Change to 100% to make it responsive */
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    min-width: 90%; /* Adjust as needed for smaller screens */
+    min-height: auto; /* Remove fixed height */
+    max-height: 70vh; /* Set maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  }
+
+  .inputclass {
+    max-width: 100%;
+  }
+}
