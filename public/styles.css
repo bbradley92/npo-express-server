@@ -185,9 +185,9 @@ header {
   }
   
   .inner_calltoaction {
-    background-image: url("/public/images/creek1.jpeg");
+    background-image: url("./public/images/lakecabin.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     min-height: 100%; /* Set a minimum height to ensure the background image is visible */
     min-width: 90%;
     border-radius: 20px;
@@ -386,7 +386,7 @@ header {
 
 /* section 5  ================================= =================================*/
 .section5{
-  background-image: url("./public/images/headinglayout.jpg");
+  background-image: url("./public/images/openfield.jpg");
   background-size: cover; 
   background-position: bottom center;
   width: 100%;
@@ -433,11 +433,11 @@ header {
       flex-basis: 100%; /* Stacked columns on mobile */
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .inner-section5 p {
     color: black;
   }
-}
+} */
 
 
 
