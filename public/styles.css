@@ -280,6 +280,7 @@ header {
   flex: 0 0 calc(33.33% - 20px); /* Equal width for 3 columns with spacing between */
   padding: 20px;
   margin: 10px;
+  min-height: 10vh;
   text-align: center;
   background-color: #f7f7f7;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -336,6 +337,7 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding-top: 13px;
 }
 
 /* Style for the back face (hidden by default) */
@@ -346,6 +348,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 15px;
 }
 
 /* Style for the flip card title (you can adjust this as needed) */
@@ -373,7 +376,9 @@ header {
 .flip-card-back p {
   margin-top: 10px; /* Adjust as needed to align the text */
 }
-
+/* #qualityFlipCard{
+  padding-top: 15px;
+} */
 
 
 
