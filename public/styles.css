@@ -124,11 +124,6 @@ header {
   color: #333333;
 }
 
-@media (min-width: 1536px) {
-  .landingwords {
-    color: white;
-  }
-}
 
   
   /* Additional styles for your text elements */
