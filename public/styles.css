@@ -151,6 +151,11 @@ header {
     margin: auto;
     
   }
+  @media screen and (-ms-high-contrast: active) and (min-width: 768px) {
+    .second_inner {
+      padding-top: 25px;
+    }
+  }
 
   .sellingpoints{
     padding: 2.5rem;
