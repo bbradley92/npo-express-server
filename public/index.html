@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" href="./public/images/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <title>NPO Granting Writing</title>
 </head>
 <body>
@@ -307,15 +306,9 @@
 
         // Add click event listeners to each services element
         servicesElements.forEach(function(serviceElement) {
-        serviceElement.addEventListener('click', function() {
-            // Toggle the 'flipped' class to flip the card
-            serviceElement.classList.toggle('flipped');
-        });
-
-        // Prevent the card from flipping when the close button is clicked
-        var closeButton = serviceElement.querySelector('.close-button');
-        closeButton.addEventListener('click', function(event) {
-            event.stopPropagation();
+            serviceElement.addEventListener('click', function() {
+                // Toggle the 'flipped' class to flip the card
+                serviceElement.classList.toggle('flipped');
         });
         });
         
@@ -338,7 +331,6 @@
             popup.style.display = "none";
         });
         const secondlandingcontactBtn = document.getElementById("secondlandingcontactBtn");
-        const popup2 = document.getElementById("popup2");
         const contactForm2 = document.getElementById("contactForm2");
         const popupBtn2 = document.getElementById("closePopup2")
         
@@ -350,9 +342,7 @@
         secondlandingcontactBtn.addEventListener("click", function () {
             popup.style.display = "block";
         });
-        popup2.addEventListener("click", function () {
-            popup.style.display = "none";
-        });
+
 
             // contactForm.addEventListener("submit", function (e) {
                
