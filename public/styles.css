@@ -124,6 +124,11 @@ header {
   color: #333333;
 }
 
+@media screen and (-ms-high-contrast: active) {
+  .logo {
+    padding-top: 25px;
+  }
+}
 
   
   /* Additional styles for your text elements */
@@ -150,11 +155,6 @@ header {
     max-width: 50%;
     margin: auto;
     
-  }
-  @media screen and (-ms-high-contrast: active) {
-    .landing_text {
-      padding-top: 25px;
-    }
   }
 
   .sellingpoints{
