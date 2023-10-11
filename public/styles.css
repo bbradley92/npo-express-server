@@ -151,7 +151,7 @@ header {
     margin: auto;
     
   }
-  @media screen and (-ms-high-contrast: active) and (min-width: 768px) {
+  @media screen and (-ms-high-contrast: active) {
     .second_inner {
       padding-top: 25px;
     }
