@@ -152,7 +152,7 @@ header {
     
   }
   @media screen and (-ms-high-contrast: active) {
-    .second_inner {
+    .landing_text {
       padding-top: 25px;
     }
   }
