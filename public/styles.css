@@ -126,7 +126,11 @@ header {
 
 @media screen and (-ms-high-contrast: active) {
   .logo {
-    padding-top: 25px;
+    padding-top: 15px; /* Move the logo down by 15px */
+  }
+
+  .landing_text h1 {
+    color: white; /* Set h1 text to white */
   }
 }
 
