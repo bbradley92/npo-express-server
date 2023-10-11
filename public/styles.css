@@ -99,7 +99,7 @@ header {
     background-size: cover; 
     background-position: bottom center;
     width: 100%;
-    height: 65vh;
+    min-height: 65vh;
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center vertically */
     justify-content: center;
@@ -107,29 +107,26 @@ header {
     
 }
 
-
+/* 
 @media (max-height: 800px) {
   .logo {
     padding-top: 15px; 
   }
 
-  /* .landing_text h1 {
-    color: white; 
-  } */
+
   .q_slider {
     background-image: url("./public/images/headinglayout.jpg");
     background-size: cover; 
     background-position: bottom center;
     width: 100%;
     height: 80vh;
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    
-    
-}
   
-}
+  }
+  
+} */
 
 
 .navlogo{
