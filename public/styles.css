@@ -219,7 +219,7 @@ header {
   }
   
   .inner_calltoaction {
-    background-image: url("./public/images/lakecabin.jpg");
+    background-image: url("./public/images/openfield.jpg");
     background-size: cover;
     background-position: bottom center;
     min-height: 100%; /* Set a minimum height to ensure the background image is visible */
