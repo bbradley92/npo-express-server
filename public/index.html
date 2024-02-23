@@ -223,6 +223,55 @@
                     </div>
                 </div>
             </div>
+            <div class="product-header-container" >
+                <h2>The GrantWriting Service Your Non-Profit Needs</h2>
+                <h3>Steamlined end-to-end grant writing</h3>
+            </div>
+            <div class="product-container" >
+                
+                <div class="product-card " id="contactBtnPro"  >
+                    <h2>Starter</h2>
+                    <p>Annual Funding Strategy</p>
+                    <br/>
+                    <p>Best For Lower End Budgets</p>
+                    <br/>
+                    <ul class="checklist">
+                        <li>15-25 carefully screened grant opportunities ranging from $30,000-$100,000+ each.</li>
+                        <li>Delivered in PowerPoint form</li>
+                        <li>Informational Hub for grant funding, tailored to your non-profit’s programs.</li>
+                        <li>Foundational & Corporate grant opportunities!</li>
+                        <li>Introductory consultation to grant seeking. </li>
+                    </ul>
+                    <h6>Price: $3495</h6>
+                </div>
+                <div class="product-card-middle contactBtnPro"  id="contactBtnPro2" >
+                    <h2>Standard</h2>
+                    <p>Annual Funding Strategy + Boilerplate</p>
+                    <br />
+                    <p><u>Everything In Starter</u> plus</p>
+                    <ul class="checklist">
+                        <li>A pristine, well-crafted proposal boilerplate that can be used for submission for each grant opportunity found in the Funding Strategy. </li>
+                        <li>Data Research to bolster Statement of Need. </li>
+                        <li>Correspondence with grant program officers and corporate representatives on your behalf.</li>
+                    </ul>
+                    <h6>Price: $6995</h6>
+                </div>
+                <div class="product-card contactBtnPro" id="contactBtnPro3">
+                    <h2>NPO PRO</h2>
+                    <p>Total Funding Strategy & Implementation</p>
+                    <br />
+                    <p><u>Everything In Standard</u> plus</p>
+                    <ul class="checklist">
+                        <li>Annual Funding Strategy + Grant Boilerplate + Complete Oversight of Grantseeking Operations. </li>
+                        <li>All Starter and Standard Services</li>
+                        <li>Oversight, Expansion and Implementation of Annual Funding Funding Strategy</li>
+                        <li>On-call Grant Writing Services</li>
+                    </ul>
+                    <h6 >Request A Quote</h6>
+                </div>
+            </div>
+
+
             <div class="outterCall">
                 <div class="callToAction">
                     <div class="inner_calltoaction">
@@ -294,9 +343,12 @@
         const popup = document.getElementById("popup");
         const contactForm = document.getElementById("contactForm");
         const popupBtn = document.getElementById("closePopup")
+
+        const contactBtnPro = document.getElementById("contactBtnPro")
+        const contactBtnPro2 = document.getElementById("contactBtnPro2")
+        const contactBtnPro3 = document.getElementById("contactBtnPro3")
         
-        function closePopup() {
-            
+        function closePopup() {            
             popup.style.display = "none";
         }
         
@@ -306,6 +358,17 @@
         popupBtn.addEventListener("click", function () {
             popup.style.display = "none";
         });
+
+        contactBtnPro.addEventListener("click", function(){
+            popup.style.display = "block";
+        })
+        contactBtnPro2.addEventListener("click", function(){
+            popup.style.display = "block";
+        })
+        contactBtnPro3.addEventListener("click", function(){
+            popup.style.display = "block";
+        })
+
         const secondlandingcontactBtn = document.getElementById("secondlandingcontactBtn");
         const contactForm2 = document.getElementById("contactForm2");
         const popupBtn2 = document.getElementById("closePopup2")
