@@ -725,7 +725,25 @@ header {
   }
 }
 
-/* PRODUCT HEADER */
+/* PRODUCT CARD HEADER */
 .product-header-container{
   padding-bottom: 25px;
+}
+.card-header {
+  padding: 10px 20px; /* Adjust padding to match your design */
+  border-radius: 8px 8px 0 0; /* Round the top corners to match the card */
+  color: white; /* Text color */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.starter {
+  background-color: #28a745; /* Green for "Good" */
+}
+
+.standard {
+  background-color: #007bff; /* Blue for "Better" */
+}
+
+.npro {
+  background-color: #ffc107; /* Gold for "Best" */
 }
