@@ -4,7 +4,12 @@
     font-family: Raleway, sans-serif;
     color: #333333;
     
+    
 }
+
+/* html{
+  scroll-behavior: smooth;
+} */
 .wrapper {
     text-align: center;
     /* background-color: #fff;
@@ -683,12 +688,18 @@ header {
 
 #contactBtnPro{
   border-top: 10px solid #28a745;
+  
 }
+
 #contactBtnPro2{
   border-top: 10px solid #007bff;
 }
 #contactBtnPro3{
   border-top: 10px solid #ffc107;
+  
+}
+#limitedavail{
+  font-size: smaller;
 }
 
 /* Responsive adjustments for tablet devices */
