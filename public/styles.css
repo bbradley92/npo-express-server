@@ -676,11 +676,24 @@ header {
   text-align: left; 
 }
 
-.checklist li:before {
+.checklist .list_item:before {
   content: '✔'; /* The check mark */
   position: absolute; /* Position the check mark absolutely */
   left: 0; /* Position the check mark to the left of the list item */
   color: green;
+  /* Adjust 'top' if necessary to vertically center the check mark with the list item */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.rapidfire{
+  color: red;
+}
+.rapidfire:before{
+  content: '+'; /* The check mark */
+  font-size: 2rem;
+  position: absolute; /* Position the check mark absolutely */
+  left: 0; /* Position the check mark to the left of the list item */
+  color: red;
   /* Adjust 'top' if necessary to vertically center the check mark with the list item */
   top: 50%;
   transform: translateY(-50%);
