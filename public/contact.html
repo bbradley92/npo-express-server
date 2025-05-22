@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NPO Grant Writing</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper_inner">
+
+      <!-- Header -->
+      <header class="page_header with_hover_bg_color fixed scrolled">
+        <div class="header_inner clearfix">
+          <div class="header_left">
+            <div class="header_logo">
+              <img class="navlogo" src="./public/images/quill logo 1.png">
+            </div>
+            <div class="header_title">
+              <a href="/index.html"><h3>NPO Grant Writing</h3></a>
+            </div>
+          </div>
+          <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav_links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="process.html">Our Process</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <!-- <div class="q_slider" style="min-height: 40vh;">
+        <div class="landing_text">
+          <h1 class="landingwords">Contact Us</h1>
+          <h3 class="landingwords">Let’s work together to secure funding for your mission.</h3>
+        </div>
+      </div> -->
+
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <h1>Contact Us For Your Grant Writing Needs</h1>
+        <div class="contact-container">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> info@npograntwriting.com</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Location:</strong> 123 Main Street, City, State</p>
+            <p>We’re ready to help your nonprofit succeed. Whether you need a custom proposal or a full funding strategy, we’re here to support you.</p>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form">
+            <form action="https://formsubmit.co/info@npograntwriting.com" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button class="calltoactionbtn" type="submit">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footersection socialmedia">
+          <p>©copyright NPO Grant Writing 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Hamburger Script -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

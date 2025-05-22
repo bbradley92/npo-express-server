@@ -14,15 +14,28 @@
     <div class="wrapper">
         <div class="wrapper_inner">
             <header class="page_header with_hover_bg_color fixed scrolled">
-                <div class="header_inner clearfix">
-                  <div class="header_logo">
+            <div class="header_inner clearfix">
+                <div class="header_left">
+                <div class="header_logo">
                     <img class="navlogo" src="./public/images/quill logo 1.png">
-                  </div>
-                  <div class="header_title">
-                    <a href="/index.html"><h3>NPO Grant Writing</h3></a>
-                  </div>
                 </div>
-              </header>
+                <div class="header_title">
+                    <a href="/index.html"><h3>NPO Grant Writing</h3></a>
+                </div>
+                </div>
+                    <nav class="navbar">
+                    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                    <ul class="nav_links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    </nav>
+
+            </div>
+            </header>
+
               
             <div class="content">
                 <div class="context_inner">
@@ -407,5 +420,14 @@
             //     popup.style.display = "none";
             // });
     </script>
+    <script>
+            const toggleBtn = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            toggleBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+</script>
+
 </body>
 </html>

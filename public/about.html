@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | NPO Grant Writing</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <!-- Header -->
+            <header class="page_header with_hover_bg_color fixed scrolled">
+                <div class="header_inner clearfix">
+                    <div class="header_left">
+                        <div class="header_logo">
+                            <img class="navlogo" src="./public/images/quill logo 1.png">
+                        </div>
+                        <div class="header_title">
+                            <a href="/index.html"><h3>NPO Grant Writing</h3></a>
+                        </div>
+                    </div>
+                    <nav class="navbar">
+                        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                        <ul class="nav_links" id="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="process.html">Our Process</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Hero Banner -->
+            <div class="q_slider" style="min-height: 50vh;">
+                <div class="landing_text">
+                    <h1 class="landingwords">Our Grant Writing Expertise</h1>
+                    <h3 class="landingwords">Strategic. Results-Oriented. Mission-Focused.</h3>
+                </div>
+            </div>
+
+            <!-- About Your Grant Writer Section -->
+            <div class="section3">
+                <div class="inner_section3">
+                    <h2>About Your Grant Writer</h2>
+                    <!-- <p><em>Meet the professional who will help secure the funding your nonprofit deserves.</em></p> -->
+                    <div class="point" id="bio-point">
+                        <img class="stonehenge" src="./public/images/stonehenge.JPG" alt="brendan brandley professional head shot">
+                        <p>Hi, I'm Brendan, a dedicated and detail-oriented grant writer with a passion for helping nonprofits succeed. With years of experience securing local, state, and federal funding for mission-driven organizations, I bring both strategy and storytelling to each grant I write.</p>
+                        <p>I hold a background in nonprofit development and communication and have helped dozens of organizations grow their funding pipeline. My goal is not just to write successful proposals, but to empower your nonprofit with the tools to thrive year-round.</p>
+                        <p>When you work with NPO Grant Writing, you're not just getting a service — you're gaining a committed partner in your fundraising efforts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="second_landing expertise_hover">
+                <div class="second_inner">
+                    <h2>Our Expertise</h2>
+                    <p>At NPO Grant Writing, we specialize in crafting compelling grant proposals that align with your nonprofit’s mission and maximize your chances of funding success. Our experienced writers and researchers work with a wide range of nonprofit sectors, including education, healthcare, social services, arts and culture, and more.</p>
+                    
+                    <h3>How We Help</h3>
+                    <ul class="checklist">
+                        <li class="list_item">Custom grant proposal writing tailored to your organization’s goals</li>
+                        <li class="list_item">Strategic grant prospect research to identify the best opportunities</li>
+                        <li class="list_item">Editing and polishing of existing proposals to strengthen competitiveness</li>
+                        <li class="list_item">Development of reusable boilerplate content for future use</li>
+                        <li class="list_item">Comprehensive funding strategies built around your programs</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Recent Wins Section -->
+            <div class="section3">
+            <div class="inner_section3">
+                <h2>Recent Wins</h2>
+                <div class="sellingpoints">
+
+                <div class="point">
+                    <h3>Community Health Expansion</h3>
+                    <p><strong>Purpose:</strong> Funded the launch of a mobile health clinic in underserved neighborhoods.</p>
+                    <p><strong>Strategy:</strong> We conducted detailed needs assessments and crafted a story-driven proposal emphasizing local impact.</p>
+                    <p><strong>Amount Awarded:</strong> $125,000</p>
+                </div>
+
+                <div class="point">
+                    <h3>Youth Literacy Initiative</h3>
+                    <p><strong>Purpose:</strong> Supported a nonprofit’s after-school reading program in public schools.</p>
+                    <p><strong>Strategy:</strong> Collaborated closely with staff to align the proposal with educational outcomes and grantor goals.</p>
+                    <p><strong>Amount Awarded:</strong> $85,000</p>
+                </div>
+
+                <div class="point">
+                    <h3>Arts & Culture Revival</h3>
+                    <p><strong>Purpose:</strong> Revitalized a local arts program bringing creative workshops to low-income communities.</p>
+                    <p><strong>Strategy:</strong> Leveraged past impact metrics and aligned them with cultural preservation funding priorities.</p>
+                    <p><strong>Amount Awarded:</strong> $60,000</p>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- Call to Action Section -->
+            <div class="outterCall">
+            <div class="callToAction">
+                <div class="inner_calltoaction">
+                <div class="text-wrapper">
+                    <h3>Ready to Secure More Grant Funding?</h3>
+                    <p>Let’s work together to make your nonprofit’s mission a reality.</p>
+                    <button class="calltoactionbtn" onclick="location.href='contact.html'">Contact Us Today</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footersection socialmedia">
+                    <p>©copyright NPO Grant Writing 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hamburger Script -->
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
