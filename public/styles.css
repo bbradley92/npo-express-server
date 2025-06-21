@@ -368,6 +368,14 @@ header {
   }
 }
 
+/* ABOUT ME POINT BACKGROUND FOR GRANTS WE LOOK FOR */
+.bgpoint{
+  background-color: #06bdc0;
+}
+.bgpoint p{
+  color: white;
+}
+
 
 /* SECTION 4: SERVICES */
 /* Default styles for the section */
