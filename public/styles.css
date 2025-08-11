@@ -1104,55 +1104,53 @@ header {
   justify-content: center;
   margin-bottom: 20px;
 }
-
-.ppt-gallery img {
-  width: calc(33.333% - 10px);
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  object-fit: cover;
-}
-
-/* Stack on mobile */
-@media (max-width: 767px) {
-  .ppt-gallery {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .ppt-gallery img {
-    width: 100%;
-  }
-}
-
-.example-powerpoint-section {
-  background: #fff;
-  padding: 2rem 0;
-  border-radius: 18px;
-  box-shadow: 0 2px 18px rgba(30,30,30,0.09);
-}
-
 .iframe-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
-@media (max-width: 768px) {
+
+.iframe-wrapper iframe {
+  width: 100%;
+  max-width: 100vw;   /* Prevent overflow beyond viewport */
+  height: 80vh;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;  /* Include padding/border in width */
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
   .iframe-wrapper {
-    width: 95%;
+    max-width: 90vw;      /* Slightly wider for tablets */
+  }
+  .iframe-wrapper iframe {
+    height: 70vh;     /* Adjust height for tablet screens */
+  }
+}
+
+/* Mobile adjustments (phones) */
+@media (max-width: 767px) {
+  .iframe-wrapper {
+    max-width: 95vw;
+    width: 95vw;
+    padding: 0 2.5vw;
+    overflow-x: auto;
   }
   .iframe-wrapper iframe {
     height: 60vh;
-  }
-}
-
-/* Extra small devices (phones) */
-@media (max-width: 480px) {
-  .iframe-wrapper {
+    min-height: 400px;
     width: 100%;
+    transform: scale(0.8);
+    transform-origin: top left;
   }
-  .iframe-wrapper iframe {
-    height: 50vh;
-    border-radius: 8px;
+  .example-powerpoint-section {
+    padding: 20px 10px;
+  }
+  .example-powerpoint-section h2 {
+    font-size: 1.5rem;
+    padding: 0 10px;
   }
 }
