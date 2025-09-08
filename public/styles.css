@@ -1142,6 +1142,7 @@ header {
   .iframe-wrapper iframe {
     height: 70vh;
     min-height: 500px;
+    max-height: calc(100vh - 100px);
     width: 100%;
     border-radius: 8px;
   }
@@ -1151,5 +1152,25 @@ header {
   .example-powerpoint-section h2 {
     font-size: 1.5rem;
     padding: 0 10px;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .iframe-wrapper {
+    padding: 0 2px;
+  }
+  .iframe-wrapper iframe {
+    height: 65vh;
+    min-height: 450px;
+    max-height: calc(100vh - 80px);
+    border-radius: 6px;
+  }
+  .example-powerpoint-section {
+    padding: 15px 2px;
+  }
+  .example-powerpoint-section h2 {
+    font-size: 1.3rem;
+    padding: 0 8px;
   }
 }
