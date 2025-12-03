@@ -361,6 +361,50 @@ header {
   }
 
 
+/* MEET BRENDAN SECTION */
+.meet-brendan {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.meet-brendan-inner {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.meet-brendan h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.meet-brendan p {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 15px;
+  text-align: left;
+  font-style: italic;
+}
+
+/* Mobile responsive for Meet Brendan */
+@media (max-width: 768px) {
+  .meet-brendan-inner {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .meet-brendan h2 {
+    font-size: 2rem;
+  }
+
+  .meet-brendan p {
+    font-size: 1rem;
+  }
+}
+
 /* SECTION 3 STYLING */
 /* Default styles for the section ========================================== */
 .section3 {
