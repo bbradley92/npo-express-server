@@ -801,7 +801,9 @@ header {
 
 @media (max-width: 768px) {
   .partners-logos {
-    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 
   .partner-logo {
