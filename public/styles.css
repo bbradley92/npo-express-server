@@ -756,6 +756,66 @@ header {
 
 
 
+/* OUR PARTNERS SECTION */
+.our-partners {
+  background-color: #f7f7f7;
+  padding: 25px 20px 50px;
+  text-align: center;
+}
+
+.our-partners-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.our-partners-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 0px;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  width: 240px;
+  height: 200px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo[alt="Emmaus"] {
+  width: 360px;
+  height: 200px;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .partners-logos {
+    gap: 50px;
+  }
+
+  .partner-logo {
+    width: 180px;
+    height: 150px;
+  }
+
+  .partner-logo[alt="Emmaus"] {
+    width: 270px;
+    height: 150px;
+  }
+}
+
+
 /* footer styles  ================================= ================================= */
 /* Default styles for the section */
 .footer {
