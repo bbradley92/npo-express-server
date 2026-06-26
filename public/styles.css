@@ -818,6 +818,73 @@ header {
 }
 
 
+/* REGISTRATIONS AND COMPLIANCE SECTION */
+.registrations-compliance {
+  background-color: #ffffff;
+  padding: 25px 20px 60px;
+  text-align: center;
+}
+
+.registrations-compliance-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.registrations-compliance-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.registration-certificate-link {
+  display: inline-block;
+}
+
+.registration-certificate {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.registration-certificate:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.registration-text {
+  max-width: 640px;
+  margin: 30px auto 0;
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.registration-text p {
+  margin: 0 0 16px;
+}
+
+.registration-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .registrations-compliance-title {
+    font-size: 1.6rem;
+  }
+
+  .registration-certificate {
+    max-width: 100%;
+  }
+
+  .registration-text {
+    font-size: 0.9rem;
+  }
+}
+
+
 /* footer styles  ================================= ================================= */
 /* Default styles for the section */
 .footer {
