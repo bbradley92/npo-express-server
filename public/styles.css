@@ -1697,3 +1697,80 @@ header {
     right: 5px;
   }
 }
+/* ============================
+   SEO refactor support styles
+   ============================ */
+
+/* Site title in header (was an h3, now a span for correct heading hierarchy) */
+.header_title .site-title {
+  color: #fff;
+  margin: 0;
+  font-size: 1.17em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Hero eyebrow line (was an h3, now a p) */
+.landing_text .hero-eyebrow {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+/* FAQ section */
+.faq-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.faq-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer links + contact info */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-nap {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-nap a {
+  color: #fff;
+}
