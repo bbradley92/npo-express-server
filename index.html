@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+    <script type="application/ld+json">{{{json organizationSchema}}}</script>
+    <script type="application/ld+json">{{{json faqSchema}}}</script>
+  </head>
+  <body data-page="{{page.active}}">
+    {{> header}}
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero__texture" aria-hidden="true"></div>
+        <div class="shell hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Human Directed Grant Growth, Powered by GGS™</p>
+            <h1>Build a Grant Pipeline That Does Not Depend on One Big Win</h1>
+            <p class="hero__lede">NPO Grant Writing combines human judgment with the Grant Growth System™ to help nonprofits find, qualify, produce, submit, and manage more well matched funding opportunities without overwhelming their staff.</p>
+            <div class="button-row">
+              <a class="button" href="/grant-growth-system.html">See How GGS Works</a>
+              <a class="button button--secondary" href="/contact.html">Schedule a Grant Growth Review</a>
+            </div>
+            <p class="trust-line">Rigorous research. Verified institutional information. Human approved submissions. Measurable portfolio growth.</p>
+          </div>
+          <div class="pipeline-card" aria-label="Grant Growth System six stage overview">
+            <div class="pipeline-card__header">
+              <div>
+                <p>Grant Growth System™</p>
+                <span>Portfolio operating view</span>
+              </div>
+              <span class="status-pill">Human directed</span>
+            </div>
+            <ol class="pipeline-list">
+              {{#each site.ggsStages}}
+                <li>
+                  <span>{{number}}</span>
+                  <div>
+                    <strong>{{title}}</strong>
+                    <small>{{summary}}</small>
+                  </div>
+                </li>
+              {{/each}}
+            </ol>
+            <div class="pipeline-card__footer">
+              <span>Discover</span><span>Validate</span><span>Produce</span><span>Measure</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--problem" aria-labelledby="problem-title">
+        <div class="shell split-heading">
+          <div>
+            <p class="eyebrow">The problem and the opportunity</p>
+            <h2 id="problem-title">Strong missions need a repeatable path to funding.</h2>
+          </div>
+          <div class="prose prose--large">
+            <p>Most nonprofits do not lack meaningful work. They lack the time and operating infrastructure required to repeatedly identify, validate, prepare, approve, submit, and manage the right funding opportunities.</p>
+            <p>Grant seeking is more than writing. Every application requires research, qualification, organizational information, documents, approvals, submission evidence, reporting, and follow through. When those steps must be rebuilt for every opportunity, even valuable grants can become too expensive in staff time to pursue.</p>
+            <p>Major grants still matter. A healthier strategy also builds a diversified portfolio of recurring funders and smaller, well matched requests that a traditional process can make too costly to pursue.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ggs-title">
+        <div class="shell section-heading">
+          <p class="eyebrow">The operating system</p>
+          <h2 id="ggs-title">Six connected stages. One disciplined portfolio.</h2>
+          <p>The Grant Growth System™ is NPO Grant Writing’s proprietary, human directed operating system for building and managing a larger, more disciplined institutional funding portfolio.</p>
+        </div>
+        <div class="shell stage-grid">
+          {{#each site.ggsStages}}
+            <a class="stage-card" href="/grant-growth-system.html#{{id}}">
+              <span class="stage-card__number">{{number}}</span>
+              <h3>{{title}}</h3>
+              <p>{{summary}}</p>
+              <span class="stage-card__link">Explore the stage <span aria-hidden="true">→</span></span>
+            </a>
+          {{/each}}
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="lanes-title">
+        <div class="shell section-heading section-heading--center">
+          <p class="eyebrow">Two complementary lanes</p>
+          <h2 id="lanes-title">Consistent production and strategic depth.</h2>
+          <p>The evergreen portfolio complements major proposals. It does not replace them.</p>
+        </div>
+        <div class="shell lane-grid">
+          <article class="lane-card lane-card--evergreen">
+            <span class="lane-card__label">Lane 01</span>
+            <h3>Evergreen Portfolio</h3>
+            <p>Smaller, qualified, lower burden opportunities that can use approved institutional materials with limited additional coordination.</p>
+            <ul class="check-list">
+              <li>Qualified before production</li>
+              <li>Built from verified source material</li>
+              <li>Designed for repeatable review</li>
+            </ul>
+          </article>
+          <article class="lane-card lane-card--strategic">
+            <span class="lane-card__label">Lane 02</span>
+            <h3>Strategic Opportunities</h3>
+            <p>Larger, more complex applications requiring specialized program information, budgets, partnerships, commitments, executive involvement, or substantial customization.</p>
+            <ul class="check-list">
+              <li>Higher complexity and potential value</li>
+              <li>Enhanced review and coordination</li>
+              <li>Tailored strategy and production</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--human" aria-labelledby="human-title">
+        <div class="shell human-intro">
+          <p class="eyebrow eyebrow--light">What remains human</p>
+          <h2 id="human-title">Technology strengthens the work. People direct it.</h2>
+          <p>Technology can strengthen research, organization, drafting, validation, and tracking. It cannot replace institutional knowledge, funder relationships, ethical judgment, program expertise, or authorized approval. GGS directs human attention to the decisions where it matters most.</p>
+        </div>
+        <div class="shell human-grid">
+          <article>
+            <h3>The system supports</h3>
+            <ol class="number-list">
+              <li>Information organization</li>
+              <li>Source tracking</li>
+              <li>Prospect discovery</li>
+              <li>Qualification workflows</li>
+              <li>Draft production</li>
+              <li>Deadline management</li>
+              <li>Submission records</li>
+              <li>Portfolio measurement</li>
+            </ol>
+          </article>
+          <article>
+            <h3>Humans control</h3>
+            <ol class="number-list number-list--accent">
+              <li>Final factual representations</li>
+              <li>Funder relationships</li>
+              <li>Program strategy</li>
+              <li>Applicant entity selection</li>
+              <li>Budgets and financial commitments</li>
+              <li>Partnerships and certifications</li>
+              <li>Final approval</li>
+              <li>Final submission authority</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--services" id="services" aria-labelledby="services-title">
+        <div class="shell section-heading">
+          <p class="eyebrow eyebrow--light">Services</p>
+          <h2 id="services-title">Start with the infrastructure you need.</h2>
+        </div>
+        <div class="shell service-grid">
+          {{#each site.services}}
+            <article class="service-card{{#if featured}} service-card--featured{{/if}}">
+              <span>{{label}}</span>
+              <h3>{{name}}</h3>
+              <p>{{description}}</p>
+              <a href="/contact.html">{{ctaLabel}} <span aria-hidden="true">→</span></a>
+            </article>
+          {{/each}}
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="serve-title">
+        <div class="shell serve-grid">
+          <div>
+            <p class="eyebrow">Who NPO serves</p>
+            <h2 id="serve-title">Built around the realities of mission driven work.</h2>
+          </div>
+          <ul class="serve-list">
+            <li>Intellectual and developmental disability providers</li>
+            <li>Behavioral health and human services organizations</li>
+            <li>Early childhood and education programs</li>
+            <li>Housing and community living organizations</li>
+            <li>Growing nonprofits without a full internal grants department</li>
+            <li>Advancement teams that need additional research, writing, or production capacity</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--tint section--clients" aria-labelledby="clients-title">
+        <div class="shell section-heading section-heading--center">
+          <p class="eyebrow">Clients and partners</p>
+          <h2 id="clients-title">Organizations NPO Grant Writing has supported.</h2>
+        </div>
+        <ul class="shell client-grid" role="list">
+          {{#each site.clients}}
+            <li class="client-logo client-logo--{{tone}}">
+              <img src="{{file}}" width="{{width}}" height="{{height}}" alt="{{name}} logo" loading="lazy" decoding="async" />
+            </li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="faq-title">
+        <div class="shell faq-grid">
+          <div class="faq-heading">
+            <p class="eyebrow">Frequently asked questions</p>
+            <h2 id="faq-title">Clear answers before the work begins.</h2>
+            <a class="text-link" href="/contact.html">Ask a different question <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="accordion">
+            {{#each site.faq}}
+              <details>
+                <summary>{{question}}</summary>
+                <p>{{answer}}</p>
+              </details>
+            {{/each}}
+          </div>
+        </div>
+      </section>
+      {{> final-cta}}
+    </main>
+    {{> footer}}
+  </body>
+</html>

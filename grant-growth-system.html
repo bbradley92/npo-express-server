@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Grant Growth System",
+        "provider": { "@id": "https://www.npograntwriting.com/#organization" },
+        "url": "https://www.npograntwriting.com/grant-growth-system.html",
+        "description": "A proprietary, human directed operating system for building and managing a larger, more disciplined institutional funding portfolio.",
+        "audience": { "@type": "Audience", "audienceType": "Nonprofit organizations" }
+      }
+    </script>
+    <script type="application/ld+json">{{{json stagesSchema}}}</script>
+  </head>
+  <body data-page="{{page.active}}">
+    {{> header}}
+    <main id="main-content">
+      <header class="page-hero page-hero--dark">
+        <div class="shell page-hero__grid">
+          <div>
+            <p class="eyebrow eyebrow--light">Our proprietary Grant Growth System™</p>
+            <h1>A disciplined operating system for institutional funding.</h1>
+          </div>
+          <div class="page-hero__lede">
+            <p>The Grant Growth System™ is NPO Grant Writing’s proprietary, human directed operating system for building and managing a larger, more disciplined institutional funding portfolio. Its value is not simply that technology can draft grants faster. Its value comes from combining institutional knowledge, structured research, source control, qualification, standardized production, human oversight, submission evidence, and portfolio analytics in one repeatable process.</p>
+          </div>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Grant Growth System stages">
+        <div class="shell section-nav__inner">
+          {{#each site.ggsStages}}
+            <a href="#{{id}}"><span>{{number}}</span>{{title}}</a>
+          {{/each}}
+        </div>
+      </nav>
+
+      <section class="section" aria-labelledby="stages-title">
+        <div class="shell section-heading">
+          <p class="eyebrow">The six stages</p>
+          <h2 id="stages-title">The work connects before, during, and after the narrative.</h2>
+          <p>Each stage strengthens the next. A weakness in institutional information, eligibility evidence, approval, or submission records is surfaced rather than hidden.</p>
+        </div>
+        <div class="shell stage-detail-list">
+          <article class="stage-detail" id="institutional-intelligence">
+            <div class="stage-detail__title">
+              <span>01</span>
+              <div>
+                <p class="eyebrow">Understand first</p>
+                <h3>Institutional Intelligence</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Existing information is gathered and reconciled before production expands. The goal is to understand the organization, its programs, entities, priorities, history, and internal decision paths.</p>
+              <ul class="column-list">
+                <li>Prior applications</li>
+                <li>Financial and organizational documents</li>
+                <li>Email correspondence</li>
+                <li>CRM and donor records</li>
+                <li>Shared files</li>
+                <li>Funder communications</li>
+                <li>Public filings</li>
+                <li>Approved internal materials</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="stage-detail" id="source-control">
+            <div class="stage-detail__title">
+              <span>02</span>
+              <div>
+                <p class="eyebrow">Control the facts</p>
+                <h3>Source Control</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Verified organizational facts, reusable narratives, attachments, and prohibited or outdated claims are organized into a controlled fact bank. Records can identify the applicable legal entity, verification date, current owner, next review date, and any source that supersedes an older version.</p>
+              <aside class="callout"><strong>Conflicting or unsupported information is flagged for human review.</strong> It is not invented, silently resolved, or inserted into an application.</aside>
+            </div>
+          </article>
+
+          <article class="stage-detail" id="opportunity-discovery">
+            <div class="stage-detail__title">
+              <span>03</span>
+              <div>
+                <p class="eyebrow">Search with purpose</p>
+                <h3>Opportunity Discovery</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Potential funders are identified through multiple evidence sources. Discovery creates a research pool, not an automatic application queue.</p>
+              <ul class="column-list">
+                <li>Prior funder history</li>
+                <li>Prospect research platforms</li>
+                <li>Foundation tax filings</li>
+                <li>Comparable grantees</li>
+                <li>Official funder websites</li>
+                <li>Corporate giving programs</li>
+                <li>Electronic portals</li>
+                <li>Physical mail routes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="stage-detail" id="qualification-scoring">
+            <div class="stage-detail__title">
+              <span>04</span>
+              <div>
+                <p class="eyebrow">Spend time wisely</p>
+                <h3>Qualification and Scoring</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Each opportunity may be reviewed for legal eligibility, geography, funding purpose, general operating compatibility, request size, application access, reporting burden, competition, relationship history, duplicate risk, cooldown restrictions, and factual readiness.</p>
+              <div class="status-grid">
+                <div class="status-card status-card--green"><strong>GREEN</strong><p>Qualified for consideration.</p></div>
+                <div class="status-card status-card--yellow"><strong>YELLOW</strong><p>Potentially viable, but one or more questions remain.</p></div>
+                <div class="status-card status-card--red"><strong>RED</strong><p>Not eligible, not aligned, inaccessible, duplicative, or not worth the effort.</p></div>
+                <div class="status-card status-card--evergreen"><strong>EVERGREEN</strong><p>A lower burden GREEN opportunity using approved institutional materials with limited additional coordination.</p></div>
+              </div>
+              <p class="small-note">EVERGREEN is a subset of GREEN. It is not a substitute for qualification.</p>
+            </div>
+          </article>
+
+          <article class="stage-detail" id="controlled-production">
+            <div class="stage-detail__title">
+              <span>05</span>
+              <div>
+                <p class="eyebrow">Produce with controls</p>
+                <h3>Controlled Production and Submission</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Qualified opportunities receive tailored letters, proposals, applications, or portal responses assembled from the verified source library. The review level follows the risk.</p>
+              <div class="review-grid">
+                <article>
+                  <span>Standard Review</span>
+                  <h4>Routine, supported requests</h4>
+                  <p>Evergreen applications using already approved organizational information, current attachments, and established request types.</p>
+                </article>
+                <article>
+                  <span>Enhanced Review</span>
+                  <h4>Complex or consequential requests</h4>
+                  <p>Applications involving new program facts, specialized budgets, legal representations, partnerships, certifications, capital commitments, government funding, or unusual obligations.</p>
+                </article>
+              </div>
+              <aside class="callout callout--strong"><strong>Every external submission receives authorized human approval.</strong> GGS does not bypass certifications, account controls, or final release authority.</aside>
+            </div>
+          </article>
+
+          <article class="stage-detail" id="portfolio-management">
+            <div class="stage-detail__title">
+              <span>06</span>
+              <div>
+                <p class="eyebrow">Preserve the record</p>
+                <h3>Portfolio Management</h3>
+              </div>
+            </div>
+            <div class="stage-detail__copy">
+              <p>Every request moves through preparation, approval, submission, decision, award, reporting, stewardship, and renewal. Final transmitted files, approval records, confirmation emails, receipts, screenshots, deadlines, and follow up dates are preserved.</p>
+              <div class="portfolio-flow" aria-label="Portfolio lifecycle">
+                <span>Prepare</span><span>Approve</span><span>Submit</span><span>Decide</span><span>Report</span><span>Renew</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="supports-title">
+        <div class="shell two-column-cards">
+          <article>
+            <p class="eyebrow">What GGS supports</p>
+            <h2 id="supports-title">Structure for the repeatable work.</h2>
+            <ul class="plain-list">
+              <li>Information organization and source tracking</li>
+              <li>Prospect discovery and qualification workflows</li>
+              <li>Draft production and attachment management</li>
+              <li>Deadline and reporting management</li>
+              <li>Submission evidence and portfolio measurement</li>
+            </ul>
+          </article>
+          <article>
+            <p class="eyebrow">What remains human</p>
+            <h2>Judgment where it matters.</h2>
+            <ul class="plain-list">
+              <li>Final factual representations and program strategy</li>
+              <li>Applicant entity and EIN selection</li>
+              <li>Budgets, commitments, and certifications</li>
+              <li>Funder relationships and institutional priorities</li>
+              <li>Final approval and submission authority</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--dark" aria-labelledby="not-title">
+        <div class="shell split-heading split-heading--wide">
+          <div>
+            <p class="eyebrow eyebrow--light">What GGS is not</p>
+            <h2 id="not-title">Volume without discipline is not the goal.</h2>
+          </div>
+          <ul class="not-list">
+            <li>Autonomous grant spam</li>
+            <li>A guarantee of funding</li>
+            <li>A replacement for organizational leadership</li>
+            <li>A substitute for program expertise</li>
+            <li>Automatic legal or financial decision making</li>
+            <li>Generic AI generated proposal language</li>
+            <li>A reason to pursue poorly matched opportunities</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="risk-title">
+        <div class="shell risk-grid">
+          <div>
+            <p class="eyebrow">How GGS reduces risk</p>
+            <h2 id="risk-title">Controls are built into the workflow.</h2>
+          </div>
+          <div class="risk-cards">
+            <article><span>01</span><h3>Claims</h3><p>Material statements can be traced to approved supporting evidence.</p></article>
+            <article><span>02</span><h3>Entities</h3><p>Applicant legal name, EIN, tax status, financials, and reason for entity selection are checked.</p></article>
+            <article><span>03</span><h3>Relationships</h3><p>Prior applications, awards, declines, open reports, invitations, and assigned contacts are surfaced.</p></article>
+            <article><span>04</span><h3>Duplicates</h3><p>Pending requests, cooldown restrictions, multi-entity overlap, and conflicting outreach are flagged.</p></article>
+            <article><span>05</span><h3>Approval</h3><p>The approver, approved version, notes, and release authorization are preserved.</p></article>
+            <article><span>06</span><h3>Evidence</h3><p>Final transmitted files and external confirmations remain connected to the submission record.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--measure" aria-labelledby="measure-title">
+        <div class="shell measure-grid">
+          <div>
+            <p class="eyebrow eyebrow--light">What GGS measures</p>
+            <h2 id="measure-title">Evidence for better portfolio decisions.</h2>
+            <p>Measurement is connected to actual workflow activity wherever practical, reducing manual entry while keeping pilot data credible.</p>
+          </div>
+          <ul class="measure-list">
+            <li>Qualified and screened opportunities</li>
+            <li>Applications prepared, approved, and submitted</li>
+            <li>Dollars requested and awarded</li>
+            <li>Unrestricted and restricted funding</li>
+            <li>Processing time and estimated labor by stage</li>
+            <li>New relationships, renewals, and reporting burden</li>
+            <li>Decline reasons and funder feedback</li>
+            <li>Errors or risks prevented</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ownership-title">
+        <div class="shell ownership-card">
+          <div>
+            <p class="eyebrow">Client information and NPO intellectual property</p>
+            <h2 id="ownership-title">Clear ownership protects both sides.</h2>
+          </div>
+          <div>
+            <p>Clients retain ownership of their organization specific information, financial documents, final applications, approved narratives, budgets, funder correspondence, and submission records.</p>
+            <p>NPO Grant Writing retains ownership of the Grant Growth System™ methodology, software, scoring architecture, generalized templates, prompts, workflows, and system design. Access and use rights are defined in each engagement agreement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="ready-title">
+        <div class="shell readiness-grid">
+          <div>
+            <p class="eyebrow">Is your organization ready for GGS?</p>
+            <h2 id="ready-title">The best starting point is an honest capacity review.</h2>
+          </div>
+          <div>
+            <p>GGS works best when an organization has identifiable funding priorities, access to current core documents, a responsible source for institutional facts, and leadership prepared to review commitments and approve final submissions.</p>
+            <a class="button" href="/contact.html">Schedule a Grant Growth Review</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    {{> footer}}
+  </body>
+</html>

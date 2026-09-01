@@ -1,0 +1,35 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-site-header>
+  <div class="shell site-header__inner">
+    <a class="brand" href="/" aria-label="NPO Grant Writing home">
+      <img class="brand__mark" src="/images/npo-quill.png" width="54" height="54" alt="" />
+      <span class="brand__copy">
+        <span class="brand__name">NPO Grant Writing</span>
+        <span class="brand__tagline">Human Directed Grant Growth</span>
+      </span>
+    </a>
+    <a class="button button--small site-header__cta" href="/contact.html">Book a Review</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+      <span class="sr-only">Open navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-navigation" aria-label="Primary" data-site-nav>
+      <ul>
+        {{#each site.navigation}}
+          <li><a href="{{href}}" data-nav-link="{{label}}">{{label}}</a></li>
+        {{/each}}
+      </ul>
+      <a class="button button--small" href="/contact.html">Grant Growth Review</a>
+    </nav>
+  </div>
+  <noscript>
+    <style>
+      @media (max-width: 1040px) {
+        .site-nav { display: grid; position: static; box-shadow: none; }
+        .nav-toggle { display: none; }
+      }
+    </style>
+  </noscript>
+</header>

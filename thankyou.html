@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body data-page="{{page.active}}">
+    {{> header}}
+    <main id="main-content" class="utility-page">
+      <div class="shell utility-page__inner utility-page__inner--success">
+        <span class="success-mark" aria-hidden="true">✓</span>
+        <p class="eyebrow">Inquiry received</p>
+        <h1>Thank you for starting the conversation.</h1>
+        <p>Your Grant Growth Review inquiry has been sent to NPO Grant Writing. Brendan or Heidi will follow up using the contact information you provided.</p>
+        <div class="button-row">
+          <a class="button" href="/">Return home</a>
+          <a class="button button--secondary" href="/grant-growth-system.html">Explore GGS</a>
+        </div>
+        <p class="small-note">Prefer to pick a time now? <a class="text-link" href="{{site.calendly}}" rel="noopener noreferrer">Schedule a call through Calendly <span aria-hidden="true">→</span></a></p>
+      </div>
+    </main>
+    {{> footer}}
+  </body>
+</html>
