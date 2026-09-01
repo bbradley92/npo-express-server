@@ -65,11 +65,6 @@
       "permanent": true
     },
     {
-      "source": "/public/images/new quill logo 1.png",
-      "destination": "/images/npo-social-card.png",
-      "permanent": true
-    },
-    {
       "source": "/public/images/new%20quill%20logo%201.png",
       "destination": "/images/npo-social-card.png",
       "permanent": true
