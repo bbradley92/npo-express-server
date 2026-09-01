@@ -25,7 +25,7 @@ export const site = {
   navigation: [
     { label: "Home", href: "/" },
     { label: "Grant Growth System", href: "/grant-growth-system.html" },
-    { label: "About", href: "/about.html" },
+    { label: "Meet the Team", href: "/about.html" },
     { label: "Contact", href: "/contact.html" }
   ],
   ggsStages: [
@@ -118,12 +118,12 @@ export const pageMetadata = {
     breadcrumbs: [{ name: "Home", item: "/" }, { name: "Grant Growth System", item: "/grant-growth-system.html" }]
   },
   "/about.html": {
-    title: "About Brendan Bradley and NPO Grant Writing",
-    description: "Meet Brendan Bradley, Heidi Roux, and the people behind NPO Grant Writing's human directed approach to grant strategy and portfolio growth.",
+    title: "Meet the Team: Brendan Bradley and Heidi Roux | NPO Grant Writing",
+    description: "Meet Brendan Bradley and Heidi Roux, the team behind NPO Grant Writing's human directed approach to grant strategy, grant writing, and portfolio growth.",
     canonical: "/about.html",
-    active: "About",
+    active: "Meet the Team",
     ogType: "website",
-    breadcrumbs: [{ name: "Home", item: "/" }, { name: "About", item: "/about.html" }]
+    breadcrumbs: [{ name: "Home", item: "/" }, { name: "Meet the Team", item: "/about.html" }]
   },
   "/contact.html": {
     title: "Schedule a Grant Growth Review | NPO Grant Writing",

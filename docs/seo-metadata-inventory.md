@@ -4,7 +4,7 @@
 |---|---|---|---|
 | `/` | Nonprofit Grant Growth Strategy \| NPO Grant Writing | Human-directed grant pipeline, research, source control, writing, submission, measurement | index |
 | `/grant-growth-system.html` | Grant Growth System™ for Nonprofits \| NPO Grant Writing | Six-stage GGS operating model | index |
-| `/about.html` | About Brendan Bradley and NPO Grant Writing | Brendan Bradley, Heidi Roux, and the human-directed approach | index |
+| `/about.html` | Meet the Team: Brendan Bradley and Heidi Roux \| NPO Grant Writing | Brendan Bradley and Heidi Roux, presented side by side | index |
 | `/contact.html` | Schedule a Grant Growth Review \| NPO Grant Writing | Readiness, pipeline, priorities, and fit | index |
 | `/privacy.html` | Privacy \| NPO Grant Writing | Actual form, scheduling, and hosting data practices | noindex utility |
 | `/thankyou.html` | Thank You \| NPO Grant Writing | Inquiry confirmation | noindex |
