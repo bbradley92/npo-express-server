@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body data-page="{{page.active}}">
+    {{> header}}
+    <main id="main-content">
+      <header class="page-hero page-hero--compact">
+        <div class="shell page-hero__grid">
+          <div>
+            <p class="eyebrow">Privacy</p>
+            <h1>How website information is handled.</h1>
+          </div>
+          <div class="page-hero__lede">
+            <p>Last updated: <time datetime="2026-09-03">September 3, 2026</time></p>
+            <p>This notice describes the current website, contact form, scheduling link, and hosting services. It should be updated whenever those services change.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section legal-section">
+        <div class="shell legal-layout">
+          <nav aria-label="Privacy notice sections">
+            <a href="#who">Who we are</a>
+            <a href="#information">Information you provide</a>
+            <a href="#form">Contact form</a>
+            <a href="#scheduling">Scheduling</a>
+            <a href="#hosting">Hosting</a>
+            <a href="#use">How information is used</a>
+            <a href="#sharing">How information is shared</a>
+            <a href="#cookies">Cookies</a>
+            <a href="#security">Security and retention</a>
+            <a href="#choices">Your choices</a>
+            <a href="#contact-privacy">Contact</a>
+          </nav>
+          <div class="legal-copy">
+            <h2 id="who">Who we are</h2>
+            <p>This website is operated by NPO Services LLC, doing business as NPO Grant Writing. This notice explains how information is handled when you visit the website, contact us, or choose to schedule a meeting.</p>
+
+            <h2 id="information">Information you provide</h2>
+            <p>When you submit the contact form, we may collect your name, organization, email address, optional phone number, organization website, service interests, current grant capacity, funding priorities, approximate timeline, and any message you choose to provide.</p>
+            <p>The public form is intended for initial business inquiries. Please do not use it to send tax returns, financial statements, passwords, health information, confidential client records, or other sensitive material.</p>
+
+            <h2 id="form">Contact form processing</h2>
+            <p>Contact form submissions are processed by FormSubmit and delivered to NPO Grant Writing by email. FormSubmit states that it retains form submissions in its submission archive for 30 days. FormSubmit may also use cookies and spam protection technology when a form is submitted. Its handling of information is described in the <a href="https://formsubmit.co/privacy.pdf" rel="noopener noreferrer">FormSubmit privacy policy</a>.</p>
+            <p>Copies delivered to NPO Grant Writing may remain in email and business records for as long as reasonably needed to respond to the inquiry, provide requested services, maintain appropriate business records, or meet legal obligations.</p>
+
+            <h2 id="scheduling">Scheduling</h2>
+            <p>Meeting scheduling is available through a link to Calendly. If you choose to schedule a meeting, Calendly may process your name, contact information, selected meeting time, and any additional information you provide. Calendly may also collect device, log, cookie, and local storage information under its <a href="https://calendly.com/legal/privacy-notice" rel="noopener noreferrer">Privacy Notice</a>.</p>
+
+            <h2 id="hosting">Hosting and technical information</h2>
+            <p>The production website is hosted by Vercel. When the website is requested, Vercel may process technical information needed to deliver, protect, and troubleshoot the site. This can include IP address, approximate location derived from IP address, browser and device information, requested pages, referring page, timestamps, system configuration, diagnostic information, and server logs. Vercel describes its practices in its <a href="https://vercel.com/legal/privacy-notice" rel="noopener noreferrer">Privacy Notice</a>.</p>
+            <p>NPO Grant Writing has not implemented a separate marketing analytics service on this website as of the date above. Third party services described in this notice may collect their own usage information under their respective policies.</p>
+
+            <h2 id="use">How we use information</h2>
+            <ul>
+              <li>Respond to inquiries.</li>
+              <li>Evaluate whether services may fit an organization’s needs.</li>
+              <li>Schedule and conduct requested meetings.</li>
+              <li>Operate, protect, maintain, and troubleshoot the website.</li>
+              <li>Prevent spam, fraud, misuse, and security incidents.</li>
+              <li>Maintain appropriate business records.</li>
+              <li>Comply with applicable legal obligations.</li>
+            </ul>
+
+            <h2 id="sharing">How information is shared</h2>
+            <p>Information may be processed by service providers that support the website and communications, including FormSubmit, Calendly, and Vercel. Information may also be disclosed when required by law, necessary to protect legal rights or safety, or connected with a business transaction permitted by law.</p>
+            <p>This website may link to services or websites operated by other organizations. Their privacy practices are governed by their own notices.</p>
+
+            <h2 id="cookies">Cookies and similar technologies</h2>
+            <p>Calendly, FormSubmit, and other interactive providers may use cookies, local storage, or similar technologies for functionality, security, scheduling, and service measurement. You can control many cookies through your browser settings. Disabling them may prevent some website features from working correctly.</p>
+            <p>If another nonessential tracking service is added later, this notice and any required consent mechanism should be updated before that service is activated.</p>
+
+            <h2 id="security">Security and retention</h2>
+            <p>Reasonable administrative and technical measures are used to protect information. No website, email transmission, or Internet based service can be guaranteed completely secure.</p>
+            <p>Information is retained only as reasonably needed for the purposes described above, subject to applicable business, contractual, and legal requirements. Retention by third party providers is governed by their policies and the settings available to NPO Grant Writing.</p>
+
+            <h2 id="choices">Your choices</h2>
+            <p>Depending on where you live, you may have rights concerning personal information. You may contact NPO Grant Writing to ask about information you submitted, request a correction, or request deletion. Some information may need to be retained when required for legal, contractual, security, or recordkeeping purposes.</p>
+
+            <h2 id="contact-privacy">Contact</h2>
+            <address>
+              {{site.legalName}} dba {{site.name}}<br />
+              {{site.address.street}}<br />
+              {{site.address.city}}, {{site.address.region}} {{site.address.postalCode}}<br />
+              <a href="mailto:{{site.email}}">{{site.email}}</a><br />
+              <a href="tel:{{site.phoneHref}}">{{site.phoneDisplay}}</a>
+            </address>
+
+            <h2>Changes</h2>
+            <p>This notice may be updated when the website, service providers, or legal requirements change. The updated publication date will appear at the top of this page.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    {{> footer}}
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Schedule a Grant Growth Review",
+        "url": "https://www.npograntwriting.com/contact.html",
+        "mainEntity": { "@id": "https://www.npograntwriting.com/#organization" }
+      }
+    </script>
+  </head>
+  <body data-page="{{page.active}}">
+    {{> header}}
+    <main id="main-content">
+      <header class="page-hero page-hero--compact">
+        <div class="shell page-hero__grid">
+          <div>
+            <p class="eyebrow">Grant Growth Review</p>
+            <h1>Start with a clear view of your grant capacity.</h1>
+          </div>
+          <div class="page-hero__lede">
+            <p>Tell NPO about your current pipeline, priorities, and internal capacity. The first conversation is designed to identify the most practical next step, not to collect sensitive financial or organizational records.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section contact-section">
+        <div class="shell contact-grid">
+          <div class="contact-intro">
+            <p class="eyebrow">Contact NPO</p>
+            <h2>Request a Grant Growth Review</h2>
+            <p>Use the form for an initial conversation, or choose a time directly through the scheduling link. Please do not send confidential documents through this page.</p>
+            <dl class="contact-list">
+              <div><dt>Email</dt><dd><a href="mailto:{{site.email}}">{{site.email}}</a></dd></div>
+              <div><dt>Phone</dt><dd><a href="tel:{{site.phoneHref}}">{{site.phoneDisplay}}</a></dd></div>
+              <div><dt>Office</dt><dd>{{site.address.street}}<br />{{site.address.city}}, {{site.address.region}} {{site.address.postalCode}}</dd></div>
+            </dl>
+            <a class="button button--secondary" href="{{site.calendly}}" rel="noopener noreferrer">Schedule through Calendly</a>
+            <p class="small-note">Calendly opens as a separate service only when you choose the scheduling link. Its privacy notice applies.</p>
+          </div>
+
+          <form class="contact-form" action="{{site.formAction}}" method="post" data-contact-form data-ajax-action="{{site.formAjaxAction}}" data-contact-email="{{site.email}}">
+            <input type="hidden" name="_subject" value="New Grant Growth Review inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_next" value="{{site.url}}/thankyou.html" />
+            <div class="honeypot" aria-hidden="true">
+              <label for="website-confirmation">Leave this field blank</label>
+              <input id="website-confirmation" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="organization">Organization <span aria-hidden="true">*</span></label>
+                <input id="organization" name="organization" type="text" autocomplete="organization" required />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="optional">Optional</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="organization-website">Organization website <span aria-hidden="true">*</span></label>
+              <input id="organization-website" name="organization_website" type="url" inputmode="url" placeholder="https://" required />
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="service-interest">Primary service interest <span aria-hidden="true">*</span></label>
+                <select id="service-interest" name="service_interest" required>
+                  <option value="">Select one</option>
+                  <option>Grant Growth Review</option>
+                  <option>GGS Foundation Build</option>
+                  <option>GGS Managed Portfolio</option>
+                  <option>Strategic Grant Project</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="timeline">Approximate timeline <span aria-hidden="true">*</span></label>
+                <select id="timeline" name="timeline" required>
+                  <option value="">Select one</option>
+                  <option>Within 30 days</option>
+                  <option>Within 90 days</option>
+                  <option>Within 6 months</option>
+                  <option>Exploring options</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="capacity">Current grant capacity <span aria-hidden="true">*</span></label>
+              <select id="capacity" name="current_grant_capacity" required>
+                <option value="">Select the closest fit</option>
+                <option>No dedicated grant staff</option>
+                <option>Grant work is shared across roles</option>
+                <option>One dedicated grant professional</option>
+                <option>Established Advancement or grants team</option>
+                <option>Other or not sure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="priorities">Funding priorities <span aria-hidden="true">*</span></label>
+              <textarea id="priorities" name="funding_priorities" rows="4" required aria-describedby="priorities-help"></textarea>
+              <small id="priorities-help">Describe the broad priorities only. Do not attach or paste confidential records.</small>
+            </div>
+            <div class="field">
+              <label for="message">Message <span class="optional">Optional</span></label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <p class="form-privacy">Please do not submit sensitive personal, financial, health, password, or confidential client information through this form. Submissions are processed by FormSubmit and delivered to NPO Grant Writing by email. See the <a href="/privacy.html">Privacy Notice</a>.</p>
+            <button class="button" type="submit" data-submit-button>Request the Review</button>
+            <div class="form-status" role="status" aria-live="polite" tabindex="-1" data-form-status></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    {{> footer}}
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}" />
+<meta name="robots" content="{{#if page.noindex}}noindex, follow{{else}}index, follow{{/if}}" />
+{{#if page.canonical}}<link rel="canonical" href="{{site.url}}{{page.canonical}}" />{{/if}}
+<meta name="theme-color" content="#153638" />
+<meta property="og:type" content="{{page.ogType}}" />
+<meta property="og:site_name" content="{{site.name}}" />
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:description" content="{{page.description}}" />
+{{#if page.canonical}}<meta property="og:url" content="{{site.url}}{{page.canonical}}" />{{/if}}
+<meta property="og:image" content="{{site.url}}{{#if page.socialImage}}{{page.socialImage}}{{else}}{{site.socialImage}}{{/if}}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="NPO Grant Writing: Human Directed Grant Growth, Powered by GGS" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{page.title}}" />
+<meta name="twitter:description" content="{{page.description}}" />
+<meta name="twitter:image" content="{{site.url}}{{#if page.socialImage}}{{page.socialImage}}{{else}}{{site.socialImage}}{{/if}}" />
+<link rel="icon" href="/images/favicon.ico" sizes="any" />
+<link rel="stylesheet" href="/src/styles.css" />
+<script type="module" src="/src/main.js"></script>
+{{#if breadcrumbSchema}}<script type="application/ld+json">{{{json breadcrumbSchema}}}</script>{{/if}}

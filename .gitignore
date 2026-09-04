@@ -1,2 +1,10 @@
-node_modules
+node_modules/
+dist/
+.DS_Store
+test-results/
+playwright-report/
+.lighthouseci/
+artifacts/
+.vercel/
 .claude/referencescreenshots
+.claude/settings.local.json

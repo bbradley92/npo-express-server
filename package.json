@@ -1,18 +1,27 @@
 {
-  "name": "npoexpress",
+  "name": "npo-grant-writing-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vite build && node tests/site-content.test.mjs && playwright test",
+    "test:content": "node tests/site-content.test.mjs",
+    "test:browser": "playwright test",
+    "test:lighthouse": "node scripts/run-lighthouse.mjs"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "chrome-launcher": "^1.0.0",
+    "lighthouse": "^13.0.1",
+    "vite": "^7.1.3",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22"
   }
 }
